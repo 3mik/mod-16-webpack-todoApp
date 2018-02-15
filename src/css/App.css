@@ -1,6 +1,8 @@
 .TodoApp {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #F5F5F5;
     color: #222;
+    font-size: 36px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;

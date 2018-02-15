@@ -1,0 +1,13 @@
+
+.TodoItem {
+    width: 80%;
+    cursor: pointer;    
+    padding: 12px 40px 12px 40px;
+    background: rgb(84, 111, 233);
+    font-size: 24px;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+
+
