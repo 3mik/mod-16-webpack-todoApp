@@ -1,15 +1,13 @@
 import React from 'react';
+import Todo from '../components/Todo';
 import style from '../css/TodoList.css';
 
 const TodoList = props => {    
-    const items = props.items.map(item => {
+    const items = props.items.map(todo => {
         return(
-            <p key={item.id} className={style.TodoItem} onClick={props.handlerDelete.bind(this, item.id)}>
-                {item.text}
-            </p>
-        );   
-
-    });
+            <Todo key={todo.id} todo={todo} handlerDelete={props.handlerDelete}/>
+        );
+    }); 
 
     return (
         <div>

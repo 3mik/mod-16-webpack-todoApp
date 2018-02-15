@@ -1,6 +1,7 @@
 import React from 'react';
 import uuid from 'uuid';
 import Title from '../components/Title';
+import TodoForm from '../components/TodoForm';
 import TodoList from '../components/TodoList';
 import style from '../css/App.css';
 
@@ -26,6 +27,7 @@ class App extends React.Component {
             ]
         };
         this.removeTodo = this.removeTodo.bind(this);
+        this.addTodo = this.addTodo.bind(this);
     }
     addTodo(val){
         const todo = {
@@ -49,6 +51,7 @@ class App extends React.Component {
         return (
             <div className={style.TodoApp}>
                 <Title title="To do app" counter={this.state.data.length} />
+                <TodoForm addHandler={this.addTodo} />
                 <TodoList items={this.state.data} handlerDelete={this.removeTodo} />
             </div>
         );
