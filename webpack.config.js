@@ -17,7 +17,7 @@ function getPlugins() {
                 inject: 'body',
             })
         ];
-    if (env === 'production') {
+    if (env.trim() === 'production') {
         plugins.push(
             new webpack.optimize.UglifyJsPlugin(),
             new OptimizeJsPlugin({
