@@ -2,6 +2,7 @@ import React from 'react';
 import Todo from '../components/Todo';
 import style from '../css/TodoList.css';
 
+
 const TodoList = props => {    
     const items = props.items.map(todo => {
         return(
@@ -10,7 +11,7 @@ const TodoList = props => {
     }); 
 
     return (
-        <div>
+        <div className={style.TodoList}>
             {items}
         </div> 
     );     
